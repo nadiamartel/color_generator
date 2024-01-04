@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Values from 'values.js'
 import './App.css'
 import FormColor from './components/FormColor';
+import DisplayColor from './components/DisplayColor';
 
 function App() {
   const [list, setList] = useState(new Values('red').all(10));
@@ -10,8 +11,8 @@ function App() {
 
   return (
     <div className='App'>
-      {/* <h2>Test Component</h2> */}
       <FormColor setList={setList}/>
+      <DisplayColor list={list}/>
     </div>
   )
 }
