@@ -5,7 +5,7 @@ import FormColor from './components/FormColor';
 import DisplayColor from './components/DisplayColor';
 
 function App() {
-  const [list, setList] = useState(new Values('red').all(10));
+  const [list, setList] = useState(new Values("#802FDE").all(5));
 
   console.log(list);
 
